@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>按钮插件</title>
+    <script src="statics/JQuery-Core/jquery-3.2.0.js"></script>
+    <link rel="stylesheet" href="statics/Bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="statics/Bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <style>
+
+    </style>
+</head>
+<body style="margin: 200px">
+<!--<button class="btn btn-default" data-toggle="button">-->
+    <!--按钮-->
+<!--</button>-->
+
+<!--单选框-->
+<!--<div class="btn-group" data-toggle="buttons">
+    <label for="" class="btn btn-primary active">
+        <input type="radio" name="sex" value="男" checked>男
+    </label>
+    <label for="" class="btn btn-primary">
+        <input type="radio" name="sex" value="女">女
+    </label>
+</div>-->
+<br>
+<!--复选框-->
+<!--<div class="btn-group" data-toggle="buttons">
+    <label for="" class="btn btn-primary active">
+        <input type="checkbox" name="fa" value="体育" checked>体育
+    </label>
+    <label for="" class="btn btn-primary">
+        <input type="checkbox" name="fa" value="音乐">体育
+    </label>
+    <label for="" class="btn btn-primary">
+        <input type="checkbox" name="fa" value="游戏">游戏
+    </label>
+    <label for="" class="btn btn-primary">
+        <input type="checkbox" name="fa" value="电影">电影
+    </label>
+</div>-->
+<!--加载状态-->
+<button id="btn" class="btn btn-primary" data-loading-text="Loading...">开始上传</button>
+<br>
+<button id="btn1" style="margin: 30px;" class="btn btn-primary">按钮</button>
+
+
+<script type="text/javascript">
+    $('#btn').on('click',function () {
+        var btn = $(this).button('loading');
+        setTimeout(function () {
+            btn.button('reset');
+        },1000)
+    });
+    $('#btn1').on('click',function () {
+        $(this).button('toggle');
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

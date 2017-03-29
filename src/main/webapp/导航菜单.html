@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>导航菜单</title>
+    <script src="statics/JQuery-Core/jquery-3.2.0.js"></script>
+    <link rel="stylesheet" href="statics/Bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="statics/Bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <style>
+        .a {
+            height: 50px;
+            width: 200px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body style="margin: 200px;">
+<!--基本导航标签-->
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#">首页</a></li>
+    <li><a href="#">资讯</a></li>
+    <li><a href="#">产品</a></li>
+    <li><a href="#">关于</a></li>
+</ul>
+
+<br>
+<!--胶囊式导航-->
+<ul class="nav nav-pills">
+    <li class="active"><a href="#">首页</a></li>
+    <li><a href="#">资讯</a></li>
+    <li><a href="#">产品</a></li>
+    <li><a href="#">关于</a></li>
+</ul>
+
+<br>
+<!--垂直式导航-->
+<ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="#">首页</a></li>
+    <li><a href="#">资讯</a></li>
+    <li><a href="#">产品</a></li>
+    <li><a href="#">关于</a></li>
+</ul>
+
+<br>
+<!--两端对齐式-->
+<ul class="nav nav-tabs nav-justified">
+    <li class="active"><a href="#">首页</a></li>
+    <li><a href="#">资讯</a></li>
+    <li><a href="#">产品</a></li>
+    <li><a href="#">关于</a></li>
+</ul>
+
+<br>
+<!--两端对齐式-->
+<ul class="nav nav-tabs nav-justified">
+    <li class="active"><a href="#">首页</a></li>
+    <li><a href="#">资讯</a></li>
+    <li><a href="#">产品</a></li>
+    <li class="disabled"><a href="#">关于</a></li>
+</ul>
+
+<br>
+<!--带下拉菜单的导航-->
+<ul class="nav nav-tabs nav-justified">
+    <li class="active"><a href="#">首页</a></li>
+    <li><a href="#">资讯</a></li>
+    <li><a href="#">产品</a></li>
+    <li class="dropdown">
+        <a href="#" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">资讯</a></li>
+            <li><a href="#">产品</a></li>
+            <li class="disabled"><a href="#">关于</a></li>
+        </ul>
+    </li>
+    <li><a href="#">关于</a></li>
+</ul>
+</body>
+</html>
